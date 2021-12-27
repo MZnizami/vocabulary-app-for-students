@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Dashboard">
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnav"
+        >
+<Button
+    android:id="@+id/adminClose"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="X"
+    android:textSize="30dp"
+    android:textStyle="bold"
+    android:layout_gravity="right"
+    android:background="@drawable/button_background"/>
+
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:id="@+id/bottomnav"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottomnav"
+        app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+        app:itemIconTint="#5255CA"
+        app:itemTextColor="@color/black"
+        android:gravity="bottom"
+        app:elevation="20dp"
+        android:verticalScrollbarPosition="left"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_progress"
+    android:background="@drawable/background3">
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/p"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="30dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Progress"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/progressName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lida Nizami"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+    </LinearLayout>
+<ScrollView
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/first"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box1"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:cardElevation="40dp"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border">
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/b1"
+                    android:layout_marginLeft="40dp"/>
+                <TextView
+                    android:id="@+id/box1Progress"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Box 1"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+                <FrameLayout
+                    android:id="@+id/progress_sec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="80dp"
+                    >
+                    <ProgressBar
+                        android:id="@+id/progress_box1"
+                        android:progressDrawable="@drawable/circule"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:indeterminateOnly="false"
+                        tools:progress="0" />
+
+                    <TextView
+                        android:id="@+id/box1_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="25dp"
+                        tools:text="60%" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:cardElevation="40dp"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border">
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/b2"
+                    android:layout_marginLeft="40dp"/>
+                <TextView
+                    android:id="@+id/box2Progress"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Box 2"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+                <FrameLayout
+                    android:id="@+id/progress_sec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="80dp"
+                    >
+                    <ProgressBar
+                        android:id="@+id/progress_box2"
+                        android:progressDrawable="@drawable/circule"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:indeterminateOnly="false"
+                        tools:progress="0" />
+
+                    <TextView
+                        android:id="@+id/box2_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="25dp"
+                        tools:text="40%" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box3"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:cardElevation="40dp"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border">
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/b3"
+                    android:layout_marginLeft="40dp"/>
+                <TextView
+                    android:id="@+id/box3Progress"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Box 3"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+                <FrameLayout
+                    android:id="@+id/progress_sec3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="80dp"
+                    >
+                    <ProgressBar
+                        android:id="@+id/progress_box3"
+                        android:progressDrawable="@drawable/circule"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:indeterminateOnly="false"
+                        tools:progress="0" />
+
+                    <TextView
+                        android:id="@+id/box3_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="25dp"
+                        tools:text="50%" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box4"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:cardElevation="40dp"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border">
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/b4"
+                    android:layout_marginLeft="40dp"/>
+                <TextView
+                    android:id="@+id/box4Progress"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Box 4"
+                    android:textSize="30dp"
+                    android:textColor="@color/black"/>
+                <FrameLayout
+                    android:id="@+id/progress_sec4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="80dp"
+                    >
+                    <ProgressBar
+                        android:id="@+id/progress_box4"
+                        android:progressDrawable="@drawable/circule"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:indeterminateOnly="false"
+                        tools:progress="0" />
+
+                    <TextView
+                        android:id="@+id/box4_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="25dp"
+                        tools:text="90%" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/box5"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            app:cardElevation="40dp"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/border">
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/b5"
+                    android:layout_marginLeft="40dp"/>
+
+                <TextView
+                    android:id="@+id/box5Progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="25dp"
+                    android:text="Box 5"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+                <FrameLayout
+                    android:id="@+id/progress_sec5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="80dp"
+                    >
+                    <ProgressBar
+                        android:id="@+id/progress_box5"
+                        android:progressDrawable="@drawable/circule"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:indeterminateOnly="false"
+                        tools:progress="0" />
+
+                    <TextView
+                        android:id="@+id/box5_percent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="23dp"
+                        tools:text="100%" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

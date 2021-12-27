@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:layout_gravity="center_horizontal"
+    tools:context=".login">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="15dp"
+        android:layout_gravity="center_vertical"
+        app:cardBackgroundColor="@color/white"
+        android:padding="20dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/pattern"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="30dp"
+        android:letterSpacing="0.03"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textColor="#5255CA"
+        />
+    <EditText
+        android:id="@+id/tusername"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="Username"
+        android:textColorHint="#5255CA"
+        android:background="@drawable/forget"
+        android:textColor="#5255CA"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/tpassword"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:hint="Password"
+        android:textColorHint="#5255CA"
+        android:textStyle="bold"
+        android:textColor="#5255CA"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/forget"
+        android:paddingLeft="20dp"
+        />
+        
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_background_blue"
+        android:textSize="18dp"
+        android:text="LOGIN"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#5255CA"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"/>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

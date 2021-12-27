@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentsprogress_instructor">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/navbarInstructor"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/black"
+        android:background="#9f5fb9"
+
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_instructor_navbar" />
+    <FrameLayout
+        android:layout_above="@+id/navbarInstructor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"
+        android:name="com.example.whatsapp.chatFrag"
+        />
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    >
+    <androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="15dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            >
+
+            <ImageView
+                android:layout_width="290dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/dream"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Records"
+                android:textSize="30dp"
+                android:letterSpacing="0.03"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:id="@+id/tfname"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:hint="First Name"
+                android:textColorHint="#5255CA"
+                android:background="@drawable/forget"
+                android:textColor="#5255CA"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/tlname"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:hint="Last Name"
+                android:textColorHint="#5255CA"
+                android:background="@drawable/forget"
+                android:textColor="#5255CA"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/tuname"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:hint="Username"
+                android:textColorHint="#5255CA"
+                android:background="@drawable/forget"
+                android:textColor="#5255CA"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/temail"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:hint="Email"
+                android:textColorHint="#5255CA"
+                android:background="@drawable/forget"
+                android:textColor="#5255CA"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                />
+            <EditText
+                android:id="@+id/tpass"
+                android:layout_width="290dp"
+                android:layout_height="45dp"
+                android:hint="Password"
+                android:textColorHint="#5255CA"
+                android:background="@drawable/forget"
+                android:textColor="#5255CA"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rg1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/rstudent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5255CA"
+                    android:layout_weight="1"
+                    android:text="Student"
+                    />
+                <RadioButton android:id="@+id/rinstructor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#5255CA"
+                    android:layout_weight="1"
+                    android:text="Instructor"
+                    />
+            </RadioGroup>
+            <Button
+                android:id="@+id/register"
+                android:layout_width="290dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_background_blue"
+                android:textSize="18dp"
+                android:text="ADD"
+                android:backgroundTint="#5255CA"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>
+
+
+</LinearLayout>

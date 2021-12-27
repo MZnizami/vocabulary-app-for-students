@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_box2">
+    <LinearLayout
+        android:id="@+id/closeContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:id="@+id/close"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:text="X"
+            android:textSize="30dp"
+            android:gravity="right"
+            android:background="@drawable/round"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+
+            android:id="@+id/studentNamebox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manizha Nizami"
+
+            android:textSize="20dp"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:id="@+id/testScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/closeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:id="@+id/box1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Box2"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question:  1/10"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_marginLeft="70dp"
+            android:id="@+id/questionCount"/>
+        <ProgressBar
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progress="0"
+            android:progressDrawable="@drawable/progress_bar"/>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/closeContainer"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="30dp"
+            app:cardCornerRadius="30dp"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/thinking"/>
+                <TextView
+                    android:id="@+id/wordQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Intimidate"
+
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp">
+                        <RadioButton
+                            android:id="@+id/choice1"
+                            android:layout_width="350dp"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:layout_height="wrap_content"
+                            android:text="frighten"
+                            android:background="@drawable/round"
+                            android:textAllCaps="false"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"/>
+
+                        <RadioButton
+                            android:id="@+id/choice2"
+                            android:layout_width="350dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:layout_height="wrap_content"
+                            android:text="not scared"
+                            android:background="@drawable/round"
+                            android:textAllCaps="false"
+                            android:gravity="center"/>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/confirm_button"
+                        android:layout_marginLeft="250dp"
+                        android:backgroundTint="#F5B041"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:layout_width="150dp"
+                        android:textStyle="bold"
+                        android:layout_height="75dp"
+                        android:text="Confirm"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>
