@@ -1,5 +1,5 @@
 # vocabulary-app-for-students
-- This is a Andriod mobile based app.
+- This is an Andriod mobile based app.
 - Here we have 5 Boxes that Box 1 is for day one, box 2 is for every 3rd day, box 3 is for once a week, box 4 is for every other week, and box 5 is for once a month.
 - Inside Box 1, there are about 15 words added by the instructor. 
 - The student should review them and clarify if she/he knows the word then she/he should tap a button which it is moved into box 2. 
